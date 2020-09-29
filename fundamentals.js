@@ -16,6 +16,7 @@ const aCar = {
     model: 'Corolla',
     cc: '1.8'
   },
+  features : ['Parking assist', 'Alarm', 'Tow-bar'],
   registration : {
     year: 201,
     country_code: 'WD',
@@ -43,3 +44,12 @@ console.log('It is a ' + aCar.color.exterior + ' car,' + ' ' + aCar.mileage + ' 
 // Arrays
 // console.log('First owner : ' + aCar.previous_owners[0] )
 console.log('First owner: ' + aCar.previous_owners[0].name + ' - ' + aCar.previous_owners[0].address)
+
+// Looping/Iteration constructs
+for (let i = 0 ; i < aCar.features.length ; i += 1) {
+  console.log(aCar.features[i]) ;
+} 
+
+for (let index in aCar.previous_owners) {
+  console.log(aCar.previous_owners[index].name)
+}
